@@ -2,5 +2,5 @@ pipeline:
   slack:
     image: plugins/slack
     channel: release
-    secrets: [ slack_webhook ]
+    webhook: https://hooks.slack.com/services/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
     when: status: [ success, failure ]
