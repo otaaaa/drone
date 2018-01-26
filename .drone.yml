@@ -1,8 +1,9 @@
 pipeline:
   rspec:
-    image: rspec
+    image: ruby:alpine
     commands:
-      - rspec
+      - bundle install --path vendor/bundle
+      - bundle exec rspec
   slack:
     image: plugins/slack
     channel: release
