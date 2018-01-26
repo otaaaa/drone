@@ -7,6 +7,8 @@ pipeline:
   slack:
     image: plugins/slack
     channel: release
+    username: drone
+    icon_url: https://pbs.twimg.com/profile_images/573911705505259520/rShq67tG_400x400.png
     secrets: [ slack_webhook ]
     when:
       status: [ success, failure ]
