@@ -1,0 +1,6 @@
+pipeline:
+  slack:
+    image: plugins/slack
+    channel: release
+    secrets: [ slack_webhook ]
+    when: status: [ success, failure ]
