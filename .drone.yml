@@ -1,4 +1,8 @@
 pipeline:
+  rspec:
+    image: rspec
+    commands:
+      - rspec
   slack:
     image: plugins/slack
     channel: release
