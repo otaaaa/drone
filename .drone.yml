@@ -2,6 +2,7 @@ pipeline:
   rspec:
     image: ruby:alpine
     commands:
+      - ruby -v
       - bundle install --path vendor/bundle
       - bundle exec rspec
   slack:
